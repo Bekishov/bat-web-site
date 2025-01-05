@@ -1,0 +1,141 @@
+/* Основные стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8; /* Увеличиваем межстрочный интервал для удобочитаемости */
+    color: #444;
+    background: #f0f2f5; /* Более мягкий фон */
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    color: #3b4e75; /* Темно-синий для заголовков */
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #3b4e75, #5a6f99);
+    color: white;
+    text-align: center;
+    padding: 3rem 0; /* Увеличиваем отступы для улучшения восприятия */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Мягкая тень */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffd700; /* Жёлтый цвет при наведении */
+}
+
+/* Секции */
+.section {
+    padding: 4rem 2rem;
+    background: #ffffff;
+    border-radius: 8px; /* Закругленные углы */
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.bg-light {
+    background: #f8f9fa;
+}
+
+/* Стили заголовков секций */
+.section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #6a11cb;
+    margin: 1rem auto 0;
+}
+
+/* Grid List */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.grid li {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ссылки */
+.grid a {
+    color: #3b4e75;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.grid a:hover {
+    color: #ffd700;
+}
+
+/* Кнопка "Наверх" */
+.to-top {
+    display: none;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: #5a6f99;
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.to-top:hover {
+    background: #3b4e75;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background: #3b4e75;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
